@@ -48,6 +48,7 @@ function Topics() {
   return (
     <Fragment>
       <h2>Topics</h2>
+      <Link to={`${url}`}>List Topics</Link><span> || </span>
       <Link to={`${url}/new`}>New Topics</Link><span> || </span>
       <Link to={`${url}/rendering`}>Rendering with React</Link><span> || </span>
       <Link to={`${url}/components`}>Components</Link><span> || </span>
@@ -73,8 +74,8 @@ function TopicList() {
   return (
     <div>
       <h3>topic list</h3>
-      <Link to={`${url}/new`}>New Topics</Link><span> || </span>
-      <Link to={`${url}/rendering`}>Rendering with React</Link>
+      <Link to={`${url}/new`}>View Topics</Link><span> || </span>
+      <Link to={`${url}/rendering`}>Edit Topic</Link>
     </div>
   );
 }
